@@ -10,3 +10,30 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+.page {
+  background-image: url(../images/cover-image-dark.png); 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  color: #F1B2CE;
+}
+
+.header__theme-menu-item {
+  color: #FF0070;
+}
+
+.decoration_title { 
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+} /*цвет и тень заголовка*/
+
+.title-decor,
+.text_description {
+  background-color: #FF0070;
+  color: #000028;
+}
+.title_paragraph {
+  color: #FF0070;
+  font-weight: bold;
+}/*настройка текста в основном отделе*/
