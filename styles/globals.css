@@ -45,72 +45,102 @@ a {
   line-height: inherit;
 } 
 
-.header,
-.footer {
-  min-height: 100vh;
-  padding-top: 75px;
-} /*растягивает стартовый блок на весь экран + отступ для псевдоэлемента*/
 
-
-.header__theme-menu-button {
-  text-transform: uppercase; /*увеличивает текст*/
-  background-color: transparent; /*прозрачный фон меню*/
-  border: none; /*убираю обводку кнопки для форматирования в псевдоэлементах*/
-  background: none; /*убираю фон*/
-}
-
-.header__theme-menu-item {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.decoration_title { 
-  font-size: 116px;
-  font-weight: bold;
-}/*текст no focus и общий стиль*/
-
-.header { 
+/*глобальное*/
+/*----------HEADER---------*/
+.header {
   display: grid;
-  justify-items: end;
-  padding-bottom: 60px;
-}/*настройка сетки header расположение*/
-
-.title-decor {
-  max-width: 100%;
+  align-items: center;
+  grid-template-rows: 1fr min-content 1fr;
+  block-size: 100vh;
+  min-height: 668px;
+  justify-content: end;
+}
+.header, .footer {
+  height: 100vh;
+}
+.header__theme-menu {
+  margin-top: 75px;
+  justify-self: end;
+}
+.header__theme-menu-button {
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
   font-size: 18px;
-  font-weight: bold;
-  line-height: 23.4px;
-} /*выравнивает текст описания header*/
-
-
-.main {
+  text-align: center;
+}
+.header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-}
-/*настройка блока текста*/
-.main__text__paragraphs {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   gap: 10px;
-} /*настройка общего вида одного блока*/
-.text_description_paragraph {
+  list-style: none;
+}
+.decoration_title_header {
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 83%;
+  align-self: end;
+}
+.description_title {
+  font-size: 18px;
+}/*----------HEADER END---------*/
+
+/*----------MAIN---------*/
+
+.content-section_main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.title-decor_content {  
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+.paragraph_main-class {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title_paragraph {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+}
+.main-text {
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  line-height: 23.4px;
+}
+.subtitle {
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  line-height: 23.4px;
   font-weight: normal;
-} /*сбрасывает bold общего стиля title-decor*/
-
-
+}
+.transform__img_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .transform__img {
   max-width: 100%;
 }
-
-
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-  justify-items: center
+.set_margin {
+  margin-bottom: 10px;
 }
-/**/
+/*----------MAIN END---------*/
+
+/*----------FOOTER---------*/
+.footer {
+  display: flex;
+  align-items: center;
+  block-size: 100vh;
+  min-height: 668px;
+  justify-content: center;
+}
+.footer_title {
+  font-size: 116px;
+  font-weight: bold;
+}
+/*----------FOOTER END---------*/

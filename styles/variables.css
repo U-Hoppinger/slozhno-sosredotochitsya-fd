@@ -3,3 +3,14 @@
   и их переопределение под различные устройства
 */
 
+:root {
+  --accent-color: #FF0070;
+  --color-text-accent: #000;
+  --decoration-color-line: #FF0070;
+  --color-button: #FF0070;
+  --color-border: #FF0070;
+  --colot-title: #DB00FF;
+  --content-end: end;
+  --content-center: center;
+  --content-start: start;
+}

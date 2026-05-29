@@ -3,3 +3,134 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+/*адаптивная зона*/
+@media (width >= 768px) {
+  .header {
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    align-items: center;
+    block-size: 100vh;
+    min-width: 100%;
+    justify-content: normal;
+  }
+  .decoration_title_header {
+    justify-self: start;
+  }
+  .header__theme-menu {
+    justify-self: end;
+  }
+  .description_title {
+    max-width: 50vw;
+    justify-self: end;
+  }
+  .section_grid_why,
+  .section_grid_how {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+  }
+  .local_setting {
+    max-width: 236px;
+  }
+  .content-section_main {
+    padding-bottom: 80px;
+  }
+  .section_grid_img {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    object-fit: cover;
+  }
+  .img_sunset {
+    grid-column: 1/3;
+    grid-row: span 1;
+  }
+  .img_ice-cream {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    min-height: 100%;
+    /*растянуть нормально*/
+  }
+  .img_tape {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    min-height: 100%;
+  }
+  .img_street {
+    grid-column: 2/4;
+  }
+  .transform__img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    block-size: 100vh;
+    min-width: 100%;
+  }
+  .header__theme-menu {
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    align-self: start;
+  }
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;  
+  }
+  .decoration_title_header {
+    justify-self: start;
+    block-size: 100%;
+    max-width: 100vw;
+    font-size: 157px;
+  }
+  .section_grid_why,
+  .section_grid_how {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+  }
+  .local_setting {
+    max-width: 315px;
+  }
+  .local_setting-parargaph {
+    display: flex;
+    flex-direction: row;
+  }
+  .section_grid_img {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    object-fit: cover;
+  }
+  .img_sunset {
+    grid-column: 1/3;
+    grid-row: span 1;
+  }
+  .img_ice-cream {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    min-height: 100%;
+  }
+  .img_tape {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    min-height: 100%;
+  }
+  .img_street {
+    grid-column: 2/4;
+  }
+  .transform__img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
