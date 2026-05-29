@@ -5,11 +5,19 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
+ --accent-color: #FF0070;
+  --color-text-accent: #000;
+  --accent-color-button: #FF0070;
+  --decoration-color-line: #FF0070;
+  --color-button: #FF0070;
+  --color-border: #FF0070;
+  --colot-title: #DB00FF;
+  --color-shadow: #FF0070;
+  --color-title-tex: #FF0070;
+  --content-end: end;
+  --content-center: center;
+  --content-start: start;
+
 .page {
   background-image: url(../images/cover-image-dark.png); 
   background-attachment: fixed;
@@ -27,20 +35,21 @@
 }
 .header__theme-menu {
   align-self: var(--content-start);
-  color: var(--color-button);
+  color: var(--accent-color-button);
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color-button);
 }
 .header__theme-menu-button:focus {
   outline: none;
 }
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color-button);
 }
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color-button);
+  
 }
 
 .decoration_title_header {
@@ -104,11 +113,11 @@
 /*----------MAIN---------*/
 
 .title-decor_content {
-  color: var(--accent-color);
+  color: #FF0070;
 }
 .title_paragraph {
   background-color: var(--accent-color);
-  color: #000;
+  color: var(--color-text-accent);
 }
 .subtitle {
   background-color: var(--accent-color);
@@ -119,8 +128,8 @@
 /*----------FOOTER---------*/
 
 .footer_title {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--color-shadow);
   color: var(--colot-title);
 }
-
+}
 /*----------FOOTER END---------*/

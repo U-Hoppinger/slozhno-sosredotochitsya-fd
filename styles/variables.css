@@ -6,10 +6,13 @@
 :root {
   --accent-color: #FF0070;
   --color-text-accent: #000;
+  --accent-color-button: #FF0070;
   --decoration-color-line: #FF0070;
   --color-button: #FF0070;
   --color-border: #FF0070;
   --colot-title: #DB00FF;
+  --color-shadow: #FF0070;
+  --color-title-tex: #FF0070;
   --content-end: end;
   --content-center: center;
   --content-start: start;
