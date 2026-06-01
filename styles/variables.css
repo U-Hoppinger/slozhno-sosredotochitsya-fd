@@ -13,9 +13,10 @@
   --colot-title: #DB00FF;
   --color-shadow: #FF0070;
   --color-title-tex: #FF0070;
+  --main-text-color: #F1B2CE;
   --content-end: end;
   --content-center: center;
   --content-start: start;
   --bakground-img: url(../images/cover-image-dark.png); 
-  --display-rec: block;
+  --rec-display: block;
 }

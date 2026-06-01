@@ -14,18 +14,18 @@
   --colot-title: #FFC2E6;
   --color-shadow: #FF8DCB;
   --color-title-text: #353430;
-  --content-end: end;
+  --main-text-color: #353430;
   --content-center: center;
   --content-start: start;
   --bakground-img: url(../images/cover-image-light.png); 
-  --display-rec: none;
-  --title-decor-color:
+  --rec-display: none;
 }
 
 
 @media (prefers-color-scheme: light) {
   :root {
   --accent-color: #FF8DCB;
+  --main-text-color: #353430;
   --color-text-accent: #353430;
   --decoration-color-line: #353430;
   --accent-color-button: #353430;
@@ -34,10 +34,12 @@
   --colot-title: #FFC2E6;
   --color-shadow: #FF8DCB;
   --color-title-text: #353430;
-  --content-end: end;
   --content-center: center;
   --content-start: start;
   --bakground-img: url(../images/cover-image-light.png); 
-  --display-rec: none;
+  --rec-display: none;
   }
+  .header__rec {
+  display: none;
+}
 }
