@@ -5,10 +5,6 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
  --accent-color: #FF8DCB;
   --color-text-accent: #353430;
   --decoration-color-line: #353430;
@@ -21,118 +17,27 @@
   --content-end: end;
   --content-center: center;
   --content-start: start;
-
-
-.header__rec {
-  display: none;
-}
-.page {
-  background-image: url(../images/cover-image-light.png); 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  color: #F1B2CE;
+  --bakground-img: url(../images/cover-image-light.png); 
+  --display-rec: none;
+  --title-decor-color:
 }
 
 
-
-.header__theme-menu {
-  align-self: var(--content-start);
-  color: var(--accent-color-button);
-}
-
-.header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color-button);
-}
-.header__theme-menu-button:focus {
-  outline: none;
-}
-.header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--accent-color-button);
-}
-.header__theme-menu-button_active {
-  border: 1px solid var(--accent-color-button);
-}
-
-.decoration_title_header {
-  text-shadow: 4px 4px 0 var(--accent-color);
-  color: var(--colot-title);
-}
-.title-decor {
-  background-color: var(--accent-color);
-  color: var(--color-text-accent);
-  font-weight: bold;
-}
-
-/*декоративная зона*/
-.decorated-zone::before {
-  content: '';
-  border-top: 1px solid var(--decoration-color-line);
-  border-right: 1px solid var(--decoration-color-line);
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.decorated-zone::after {
-  content: '';
-  border-bottom: 1px solid var(--decoration-color-line);
-  border-left: 1px solid var(--decoration-color-line);
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.footer {
-  position: relative;
-}
-.squere::before {
-  content: '';
-  border-top: 1px solid var(--decoration-color-line);
-  border-right: 1px solid var(--decoration-color-line);
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 0;
-  right: 0;
-}
-.squere::after {
-  content: '';
-  border-bottom: 1px solid var(--decoration-color-line);
-  border-left: 1px solid var(--decoration-color-line);
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-/*----------HEADER END---------*/
-
-/*----------MAIN---------*/
-
-.title-decor_content {
-  color: var(--color-title-text);
-}
-.title_paragraph {
-  background-color: var(--accent-color);
-  color: var(--color-text-accent);
-}
-.subtitle {
-  background-color: var(--accent-color);
-  color: var(--color-text-accent);
-}
-/*----------MAIN END---------*/
-
-/*----------FOOTER---------*/
-
-.footer_title {
-  text-shadow: 4px 4px 0 var(--color-shadow);
-  color: var(--colot-title);
-}
-
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: #FF8DCB;
+  --color-text-accent: #353430;
+  --decoration-color-line: #353430;
+  --accent-color-button: #353430;
+  --color-button: #FF8DCB;
+  --color-border: #FF8DCB;
+  --colot-title: #FFC2E6;
+  --color-shadow: #FF8DCB;
+  --color-title-text: #353430;
+  --content-end: end;
+  --content-center: center;
+  --content-start: start;
+  --bakground-img: url(../images/cover-image-light.png); 
+  --display-rec: none;
+  }
 }

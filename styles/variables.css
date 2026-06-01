@@ -16,4 +16,6 @@
   --content-end: end;
   --content-center: center;
   --content-start: start;
+  --bakground-img: url(../images/cover-image-dark.png); 
+  --display-rec: block;
 }
