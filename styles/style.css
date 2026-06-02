@@ -8,13 +8,12 @@
   block-size: 100vh;
   min-height: 668px;
   justify-content: end;
-  margin-bottom: 55px;
+  margin-bottom: 42px;
 }
 .header, .footer {
   height: 100vh;
 }
 .header__theme-menu {
-  margin-top: 75px;
   justify-self: end;
 }
 .header__theme-menu-button {
@@ -29,10 +28,13 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  align-items: center;
 }
 .header__theme-menu-item {
   font-family: 'IBM Plex Mono', sans-serif;
-  padding-left: 10px;
 }
 .decoration_title_header {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -46,6 +48,8 @@
 .description_title {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }/*----------HEADER END---------*/
 
 /*----------MAIN---------*/
@@ -53,11 +57,16 @@
 .content-section_main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 50px;
-  padding-bottom: 40px;
   max-width: 984px;
   }
+.section_grid_why,
+.section_grid_what,
+.section_grid_how {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
 
 .title-decor_content {  
   font-size: 18px;
@@ -70,6 +79,12 @@
   flex-direction: column;
   gap: 10px;
 }
+.new_gap_for_basics_ruls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .title_paragraph {
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
@@ -89,15 +104,14 @@
 .transform__img_flex {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 .transform__img {
   width: 100%;
   height: auto;
 }
 .set_margin {
-  margin-bottom: 10px;
-  margin-top: 5px;
+
 }
 /*----------MAIN END---------*/
 
@@ -114,6 +128,7 @@
   font-weight: bold;
   text-shadow: 4px 4px 0 var(--color-shadow);
   color: var(--colot-title);
+  padding-top: 100px;
 }
 
 /*----------FOOTER END---------*/
@@ -192,6 +207,11 @@
 .footer {
   position: relative;
 }
+.class-article_gap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
 /*----------HEADER END---------*/
 /*----------MAIN---------*/
@@ -218,17 +238,12 @@
   text-shadow: 2px 2px 1px var(--accent-color);
 }
 
-
-
-
-
-
-/*адаптивная зона*/
 @media (width >= 768px) {
   .header {
     align-items: center;
     min-width: 100%;
     justify-content: normal;
+    margin-bottom: 60px;
   }
   .decoration_title_header {
     justify-self: start;
@@ -243,12 +258,11 @@
   .header__theme-menu-list {
     display: flex;
     gap: 10px;
-    margin-bottom: 65px;
   }
   .description_title {
     max-width: 364px;
     justify-self: end;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   .section_grid_why,
   .section_grid_how {
@@ -296,38 +310,54 @@
   }
   .footer_title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    padding-bottom: 192px;
+    padding-left: 20px;
   }
-  .content-section_main {
-    margin-bottom: 35px;
-  }
+  
   .transform__img_flex {
-    max-width: 728px;
+    max-width: 100%;
     margin-left: 20px;
+    margin-top: 25px;
   }
   .class-article_gap {
     display: flex;
     flex-direction: column;
     gap: 17px;
   }
-  .footer_title {
-    padding-bottom: 100px;
-  }
+  .content-section_main {
+  gap: 15px;
+  margin-bottom: 38px;
+  padding-bottom: 40px;
+  max-width: 984px;
+}
+.local_setting-parargaph {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 }
 
 @media (width >= 1024px) {
+  
   .header {
     block-size: 100vh;
     min-width: 100%;
+    margin-bottom: 50px;
   }
-  .content-section_main {
-    padding-left: 10px;
+   .content-section_main {
+    padding-bottom: 0;
   }
+  .description_title {
+    max-width: 491px;
+  }
+
   .header__theme-menu {
     padding: 0;
     margin-top: 0;
     margin-right: 15px;
     justify-self: center;
     align-self: start;
+    padding-bottom: 10px;
   }
 
   .header__theme-menu-list {
@@ -340,25 +370,34 @@
     block-size: 100%;
     max-width: 100vw;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-
   }
+
   .section_grid_why,
   .section_grid_how {
     display: grid;
     grid-template-columns: 315px 1fr;
   }
   .section_grid_why {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    gap: 10px;
+    padding-bottom: 40px;
   }
   .section_grid_what {
-     margin-bottom: 80px;
+     margin-bottom: 40px;
+     padding-bottom: 40px;
   }
   .local_setting {
     max-width: 315px;
   }
+  .setting_media_flex {
+    display: flex;
+    gap: 20px;
+  }
   .local_setting-parargaph {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 315px;
+    gap: 12px;
   }
   .section_grid_img {
     display: grid;
@@ -390,20 +429,21 @@
     width: 100%;
     height: 100%;
   }
+  .transform__img_flex {
+    margin-top: 42px;
+  }
   .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding-bottom: 145px;
   }
-  .header__theme-menu {
-    margin-top: 10px;
-  }
-  .subtitle {
-    margin-top: 4px;
-  }
+  
   .class-article_gap {
     display: flex;
-    gap: 16px;
+    gap: 10px;
     flex-direction: column;
   }
+ .footer_title {
+  padding-bottom: 125px;
+ }
 
 }
