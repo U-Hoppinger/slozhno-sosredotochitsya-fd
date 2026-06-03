@@ -15,10 +15,9 @@
   --color-shadow: #FF8DCB;
   --color-title-text: #353430;
   --main-text-color: #353430;
-  --content-center: center;
-  --content-start: start;
   --bakground-img: url(../images/cover-image-light.png); 
   --rec-display: none;
+  --link-decor: #353430;
 }
 
 
@@ -34,12 +33,8 @@
   --colot-title: #FFC2E6;
   --color-shadow: #FF8DCB;
   --color-title-text: #353430;
-  --content-center: center;
-  --content-start: start;
   --bakground-img: url(../images/cover-image-light.png); 
   --rec-display: none;
+  --link-decor: #353430;
   }
-  .header__rec {
-  display: none;
-}
 }
