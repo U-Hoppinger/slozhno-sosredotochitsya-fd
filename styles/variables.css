@@ -17,4 +17,5 @@
   --bakground-img: url(../images/cover-image-dark.png); 
   --rec-display: block;
   --link-decor: #F1B2CE;
+  --border-hover-menu: rgba(255, 0, 112, 0.4);
 }
